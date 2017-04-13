@@ -54,6 +54,37 @@ class ServiceClient : NSObject{
         
     }
     
+    func taskForGetMethod(_ method: String, parameters: [String: AnyObject], _ requestToken: String, completionHandlerForGet: @escaping (_ result: AnyObject?, _ error: NSError? ) -> Void) -> URLSessionDataTask{
+        
+        let request = NSMutableURLRequest(url: serviceURLFromParameters(parameters, withPathExtension: method))
+        
+        request.addValue("Bearer " + requestToken, forHTTPHeaderField: "Authorization")
+        
+        let task = session.dataTask(with: request as URLRequest) { (data, response, error) in
+            guard (error == nil) else{
+                print("there was error with your request: \(error)")
+                return
+            }
+            
+            guard let statusCode = (response as? HTTPURLResponse)?.statusCode, statusCode >= 200 && statusCode <= 299 else{
+                print("Your request returned a status code others than 2xx")
+                return
+            }
+            
+            guard let data = data else{
+                print("No data found with your request")
+                return
+            }
+            
+            self.convertDataWithCompletionHandler(data, completionHandlerForConvertData: completionHandlerForGet)
+        }
+        
+        task.resume()
+        return task
+    }
+
+    
+    
     func getMessageById(_ messageID: Int, completionHandlerForGetMessageByID: @escaping (_ result: AnyObject?, _ error: NSError?) -> Void) {
         
         let method = substituteKeyInMethod(ServiceClient.Method.MessagesByID, key: "id", value: String(messageID))

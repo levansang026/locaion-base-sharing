@@ -17,21 +17,51 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let prefrences = UserDefaults.standard
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+
+    }
+    
     @IBAction func loginBtnPressed(_ sender: Any) {
         //task for get user data
+  
+        
+        
+        if let email = emailTextField.text {
+            
+            if let password = passwordTextField.text {
+                ServiceClient.sharedInstance().authenticateWithLoginViewController(email, password, { (success, error) in
+                    
+                    if success {
+                        print("Login successful")
+                        let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! ViewController
+                        
+                        self.present(mainVC, animated: true, completion: nil)
+                    } else {
+                        print("Login fail with error: \(error)")
+                    }
+                })
+            }
+            
+        }
+        
         
     }
     
     @IBAction func facebookLoginBtnPressed(_ sender: Any) {
+        
     }
     
     @IBAction func googleLoginBtnPressed(_ sender: Any) {
     }
 
     @IBAction func createAccountBtnPressed(_ sender: Any) {
+        let registerVC = storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+        
+        self.present(registerVC, animated: true, completion: nil)
     }
     
 }

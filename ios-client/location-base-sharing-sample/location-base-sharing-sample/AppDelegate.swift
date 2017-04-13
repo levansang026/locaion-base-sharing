@@ -25,6 +25,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         FIRApp.configure()
         
+        let preferences = UserDefaults.standard
+        if preferences.object(forKey: "session") != nil
+        {
+
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController")
+            self.window?.makeKeyAndVisible()
+        }
+        
         return true
     }
 

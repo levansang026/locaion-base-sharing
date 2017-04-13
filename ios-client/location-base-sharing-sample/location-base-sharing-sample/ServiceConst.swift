@@ -11,7 +11,7 @@ import Foundation
 extension ServiceClient{
     struct ServiceConst{
         static let scheme = "http"
-        static let host = "127.0.0.1:3030"
+        static let host = "127.0.0.1:3000"
     }
     
     struct Method{

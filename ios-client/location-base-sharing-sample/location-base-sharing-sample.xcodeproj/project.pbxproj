@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421F15EA1E9F059B00E7D485 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421F15E91E9F059B00E7D485 /* RegisterViewController.swift */; };
 		422B18021E9E0DE70093D604 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B18011E9E0DE70093D604 /* LoginViewController.swift */; };
 		422B18041E9E15860093D604 /* ServiceConvenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B18031E9E15860093D604 /* ServiceConvenience.swift */; };
 		4258BEF91E8A1403003A06D5 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4258BEF81E8A1403003A06D5 /* MessageViewController.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		26E5876D2DE5632BE8113DC3 /* Pods_location_base_sharing_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_location_base_sharing_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A66C2B5127AD9CE80A6062 /* Pods-location-base-sharing-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location-base-sharing-sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-location-base-sharing-sample/Pods-location-base-sharing-sample.debug.xcconfig"; sourceTree = "<group>"; };
+		421F15E91E9F059B00E7D485 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		422B18011E9E0DE70093D604 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		422B18031E9E15860093D604 /* ServiceConvenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConvenience.swift; sourceTree = "<group>"; };
 		4258BEF81E8A1403003A06D5 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		42BAF6F81E92479B008801A1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				421F15E91E9F059B00E7D485 /* RegisterViewController.swift */,
 				4258BEF81E8A1403003A06D5 /* MessageViewController.swift */,
 				42813BE81E8974E9005FDB4A /* SearchResultsController.swift */,
 				42AFC8231E87D1FD00C9AD00 /* ViewController.swift */,
@@ -389,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4258BF001E8A617C003A06D5 /* ServiceClient.swift in Sources */,
+				421F15EA1E9F059B00E7D485 /* RegisterViewController.swift in Sources */,
 				422B18041E9E15860093D604 /* ServiceConvenience.swift in Sources */,
 				42AFC8241E87D1FD00C9AD00 /* ViewController.swift in Sources */,
 				42813BE91E8974E9005FDB4A /* SearchResultsController.swift in Sources */,
