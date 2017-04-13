@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A048E449A1FAB0A859D27CFA4098D2B57DB3DF74",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A048E449A1FAB0A859D27CFA4098D2B57DB3DF74" : 9223372036854775807,
+    "53F53DFA58120C6A8DB96928BECA5E620684B6A5" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "06A1EF74-7947-4550-BA7E-AB8FEDCBFC05",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A048E449A1FAB0A859D27CFA4098D2B57DB3DF74" : "locaion-base-sharing\/",
+    "53F53DFA58120C6A8DB96928BECA5E620684B6A5" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "location-base-sharing-sample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios-client\/location-base-sharing-sample\/location-base-sharing-sample.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/levansang026\/Graduation-Essay.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "53F53DFA58120C6A8DB96928BECA5E620684B6A5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/levansang026\/locaion-base-sharing.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A048E449A1FAB0A859D27CFA4098D2B57DB3DF74"
+    }
+  ]
+}

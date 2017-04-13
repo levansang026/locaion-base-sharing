@@ -37,9 +37,12 @@ class LoginViewController: UIViewController {
                     
                     if success {
                         print("Login successful")
-                        let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! ViewController
                         
-                        self.present(mainVC, animated: true, completion: nil)
+                        DispatchQueue.main.async {
+                            let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+                        
+                            self.present(mainVC, animated: true, completion: nil)
+                        }
                     } else {
                         print("Login fail with error: \(error)")
                     }

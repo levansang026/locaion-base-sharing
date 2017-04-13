@@ -1,0 +1,6 @@
+framework module Pods_location_base_sharing_sampleUITests {
+  umbrella header "Pods-location-base-sharing-sampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

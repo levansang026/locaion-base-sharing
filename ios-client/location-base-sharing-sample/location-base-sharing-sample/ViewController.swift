@@ -170,6 +170,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
         messageViewController.position = marker.position
         messageViewController.userMarker = marker as! CTMarker
         messageViewController.delegate = self
+   //     self.navigationController = UINavigationController.init()
         self.navigationController?.pushViewController(messageViewController, animated: true)
     }
     

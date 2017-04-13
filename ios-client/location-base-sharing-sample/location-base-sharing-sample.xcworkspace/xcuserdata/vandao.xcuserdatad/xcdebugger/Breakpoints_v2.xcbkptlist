@@ -15,8 +15,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "87"
             endingLineNumber = "87"
-            landmarkName = "taskForPostMethod(_:parameters:jsonBody:completionHandlerForPost:)"
-            landmarkType = "7">
+            landmarkName = "ServiceClient"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -31,7 +31,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "82"
             endingLineNumber = "82"
-            landmarkName = "taskForPostMethod(_:parameters:jsonBody:completionHandlerForPost:)"
+            landmarkName = "taskForGetMethod(_:parameters:_:completionHandlerForGet:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -54,49 +54,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "location-base-sharing-sample/ServiceClient.swift"
-            timestampString = "513719532.442285"
+            timestampString = "513739684.052931"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "sendNewMessage(_:_:)"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "taskForPostMethod(_:parameters:jsonBody:completionHandlerForPost:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "location_base_sharing_sample.ServiceClient.sendNewMessage (location_base_sharing_sample.Message, (Swift.Optional&lt;Swift.AnyObject&gt;, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "location-base-sharing-sample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vandao/Documents/Essay/locaion-base-sharing/ios-client/location-base-sharing-sample/location-base-sharing-sample/ServiceClient.swift"
-                  timestampString = "513712241.987963"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "120"
-                  endingLineNumber = "120"
-                  offsetFromSymbolStart = "750">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "location_base_sharing_sample.ServiceClient.(sendNewMessage (location_base_sharing_sample.Message, (Swift.Optional&lt;Swift.AnyObject&gt;, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; ()).(closure #1)"
-                  moduleName = "location-base-sharing-sample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/vandao/Documents/Essay/locaion-base-sharing/ios-client/location-base-sharing-sample/location-base-sharing-sample/ServiceClient.swift"
-                  timestampString = "513712241.99343"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "121"
-                  endingLineNumber = "121"
-                  offsetFromSymbolStart = "27">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -111,7 +79,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
             endingLineNumber = "91"
-            landmarkName = "taskForPostMethod(_:parameters:jsonBody:completionHandlerForPost:)"
+            landmarkName = "getMessageById(_:completionHandlerForGetMessageByID:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -127,7 +95,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "97"
             endingLineNumber = "97"
-            landmarkName = "taskForPostMethod(_:parameters:jsonBody:completionHandlerForPost:)"
+            landmarkName = "getMessageById(_:completionHandlerForGetMessageByID:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -198,16 +166,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "location-base-sharing-sample/ServiceClient.swift"
-            timestampString = "513721872.261676"
+            timestampString = "513739711.542305"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "getMessageById(_:completionHandlerForGetMessageByID:)"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "taskForGetMethod(_:parameters:_:completionHandlerForGet:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -239,7 +207,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
-            landmarkName = "init(dictionary:)"
+            landmarkName = "init(id:dictionary:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -255,7 +223,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
             endingLineNumber = "20"
-            landmarkName = "init(dictionary:)"
+            landmarkName = "init(id:dictionary:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -287,6 +255,182 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "169"
             endingLineNumber = "169"
+            landmarkName = "mapView(_:didTapInfoWindowOf:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "location-base-sharing-sample/ServiceClient.swift"
+            timestampString = "513739687.582141"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "taskForPostMethod(_:parameters:jsonBody:completionHandlerForPost:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "location-base-sharing-sample/ServiceClient.swift"
+            timestampString = "513739714.853667"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "taskForGetMethod(_:parameters:_:completionHandlerForGet:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "location-base-sharing-sample/ViewController.swift"
+            timestampString = "513740425.069975"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "location-base-sharing-sample/ViewController.swift"
+            timestampString = "513740429.072012"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "location-base-sharing-sample/ViewController.swift"
+            timestampString = "513740430.739599"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "location_base_sharing_sample.ViewController.(viewDidLoad () -&gt; ()).(closure #2).(closure #1)"
+                  moduleName = "location-base-sharing-sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vandao/Graduation-Essay/locaion-base-sharing/ios-client/location-base-sharing-sample/location-base-sharing-sample/ViewController.swift"
+                  timestampString = "513740555.680716"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "361">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "location_base_sharing_sample.ViewController.(viewDidLoad () -&gt; ()).(closure #2).(closure #1).(closure #1)"
+                  moduleName = "location-base-sharing-sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vandao/Graduation-Essay/locaion-base-sharing/ios-client/location-base-sharing-sample/location-base-sharing-sample/ViewController.swift"
+                  timestampString = "513740555.683479"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "location-base-sharing-sample/ViewController.swift"
+            timestampString = "513740578.605207"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "location_base_sharing_sample.ViewController.(viewDidLoad () -&gt; ()).(closure #2).(closure #1)"
+                  moduleName = "location-base-sharing-sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vandao/Graduation-Essay/locaion-base-sharing/ios-client/location-base-sharing-sample/location-base-sharing-sample/ViewController.swift"
+                  timestampString = "513740578.611842"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "361">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "location_base_sharing_sample.ViewController.(viewDidLoad () -&gt; ()).(closure #2).(closure #1).(closure #1)"
+                  moduleName = "location-base-sharing-sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vandao/Graduation-Essay/locaion-base-sharing/ios-client/location-base-sharing-sample/location-base-sharing-sample/ViewController.swift"
+                  timestampString = "513740578.617255"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "location-base-sharing-sample/ViewController.swift"
+            timestampString = "513740869.083044"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "mapView(_:didTapInfoWindowOf:)"
             landmarkType = "7">
          </BreakpointContent>
