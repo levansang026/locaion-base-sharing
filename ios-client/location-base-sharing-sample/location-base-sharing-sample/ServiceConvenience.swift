@@ -20,11 +20,12 @@ extension ServiceClient{
         
         let webAuthViewController = hostViewController.storyboard!.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
         
-        let email = 
-        
-        let parameters = [String: AnyObject]()
-        
-        let jsonBody = "{\"email\": \"\()"
-        
-        let _ taskForPostMethod("/auth_api/login", parameters: <#T##[String : AnyObject]#>, jsonBody: <#T##String#>, completionHandlerForPost: <#T##(AnyObject?, NSError?) -> Void#>)    }
+//        let email = 
+//        
+//        let parameters = [String: AnyObject]()
+//        
+//        let jsonBody = "{\"email\": \"\()"
+//        
+//        let _ taskForPostMethod("/auth_api/login", parameters: <#T##[String : AnyObject]#>, jsonBody: <#T##String#>, completionHandlerForPost: <#T##(AnyObject?, NSError?) -> Void#>)    
+    }
 }

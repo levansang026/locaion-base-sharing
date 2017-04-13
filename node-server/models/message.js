@@ -2,6 +2,7 @@
 
 const mongoose = require("mongoose");
 var autoIncrement = require('mongoose-auto-increment');
+const uuid = require('node-uuid');
 
 var opts = {
         server: {
@@ -9,13 +10,13 @@ var opts = {
     }
 };
 
-mongoose.Promise = require('bluebird'); 
+// let promise = require('bluebird');
 const connectionString = 'mongodb://localhost/test-message';
 var connection = mongoose.connect(connectionString, opts);
-
-autoIncrement.initialize(connection);
+// mongoose.Promise = promise;
 
 var MessageSchema = new mongoose.Schema({
+  id: {type: String, default: uuid.v1()},
   sender: {type: String, default: "unknow"},
   receiver: {type: String, default: "public"},
   title: {type: String},
@@ -25,7 +26,6 @@ var MessageSchema = new mongoose.Schema({
   create_date: {type: Date, default: Date.now}
 });
 
-MessageSchema.plugin(autoIncrement.plugin, 'Message');
 
 var Message = mongoose.model('Message', MessageSchema);
 

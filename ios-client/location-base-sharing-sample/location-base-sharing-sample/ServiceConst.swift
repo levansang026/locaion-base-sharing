@@ -11,12 +11,12 @@ import Foundation
 extension ServiceClient{
     struct ServiceConst{
         static let scheme = "http"
-        static let host = "127.0.0.1:3030"
+        static let host = "127.0.0.1:3000"
     }
     
     struct Method{
-        static let AllMessages = "/messages/"
-        static let MessagesByID = "/messages/{id}"
+        static let AllMessages = "/api/messages/"
+        static let MessagesByID = "/api/messages/{id}"
     }
     
     struct JSONResponseKeys{

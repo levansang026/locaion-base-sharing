@@ -21,6 +21,8 @@
 		42AFC82C1E87D1FD00C9AD00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AFC82A1E87D1FD00C9AD00 /* LaunchScreen.storyboard */; };
 		42AFC8371E87D1FD00C9AD00 /* location_base_sharing_sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AFC8361E87D1FD00C9AD00 /* location_base_sharing_sampleUITests.swift */; };
 		42BAF6F51E924765008801A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42BAF6F41E924765008801A1 /* GoogleService-Info.plist */; };
+		BCD273D71E9EF6E8005E2C33 /* CTMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD273D61E9EF6E8005E2C33 /* CTMarker.swift */; };
+		BCD273D91E9EF903005E2C33 /* marker.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD273D81E9EF903005E2C33 /* marker.png */; };
 		BFABBDD16FAFF35EAAE317ED /* Pods_location_base_sharing_sampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF6D86DB4AB73589A64497E /* Pods_location_base_sharing_sampleUITests.framework */; };
 		DADF34A6747380E245FF0370 /* Pods_location_base_sharing_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E5876D2DE5632BE8113DC3 /* Pods_location_base_sharing_sample.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,8 @@
 		6756F8F9AC37BE17F5D1F5E3 /* Pods-location-base-sharing-sampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location-base-sharing-sampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-location-base-sharing-sampleUITests/Pods-location-base-sharing-sampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		68F906DE5FBF546E957BAF38 /* Pods-location-base-sharing-sampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location-base-sharing-sampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-location-base-sharing-sampleUITests/Pods-location-base-sharing-sampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ABF6D86DB4AB73589A64497E /* Pods_location_base_sharing_sampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_location_base_sharing_sampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD273D61E9EF6E8005E2C33 /* CTMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTMarker.swift; sourceTree = "<group>"; };
+		BCD273D81E9EF903005E2C33 /* marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marker.png; sourceTree = "<group>"; };
 		F0095CA35BAC6489EAA2DBC6 /* Pods-location-base-sharing-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-location-base-sharing-sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-location-base-sharing-sample/Pods-location-base-sharing-sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,10 +89,12 @@
 		4258BEFA1E8A5F34003A06D5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BCD273D81E9EF903005E2C33 /* marker.png */,
 				4258BEFB1E8A5F4B003A06D5 /* Message.swift */,
 				4258BEFD1E8A610E003A06D5 /* ServiceConst.swift */,
 				4258BEFF1E8A617C003A06D5 /* ServiceClient.swift */,
 				422B18031E9E15860093D604 /* ServiceConvenience.swift */,
+				BCD273D61E9EF6E8005E2C33 /* CTMarker.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -240,7 +246,6 @@
 				TargetAttributes = {
 					42AFC81D1E87D1FD00C9AD00 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 77LVJKWHTW;
 						ProvisioningStyle = Automatic;
 					};
 					42AFC8311E87D1FD00C9AD00 = {
@@ -275,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42AFC82C1E87D1FD00C9AD00 /* LaunchScreen.storyboard in Resources */,
+				BCD273D91E9EF903005E2C33 /* marker.png in Resources */,
 				42BAF6F51E924765008801A1 /* GoogleService-Info.plist in Resources */,
 				42AFC8291E87D1FD00C9AD00 /* Assets.xcassets in Resources */,
 				42AFC8271E87D1FD00C9AD00 /* Main.storyboard in Resources */,
@@ -394,6 +400,7 @@
 				42813BE91E8974E9005FDB4A /* SearchResultsController.swift in Sources */,
 				4258BEFC1E8A5F4B003A06D5 /* Message.swift in Sources */,
 				422B18021E9E0DE70093D604 /* LoginViewController.swift in Sources */,
+				BCD273D71E9EF6E8005E2C33 /* CTMarker.swift in Sources */,
 				4258BEF91E8A1403003A06D5 /* MessageViewController.swift in Sources */,
 				42AFC8221E87D1FD00C9AD00 /* AppDelegate.swift in Sources */,
 				4258BEFE1E8A610E003A06D5 /* ServiceConst.swift in Sources */,
@@ -536,7 +543,7 @@
 			baseConfigurationReference = 33A66C2B5127AD9CE80A6062 /* Pods-location-base-sharing-sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 77LVJKWHTW;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "location-base-sharing-sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.metmoi.sample.location-base-sharing-sample";
@@ -550,7 +557,7 @@
 			baseConfigurationReference = F0095CA35BAC6489EAA2DBC6 /* Pods-location-base-sharing-sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 77LVJKWHTW;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "location-base-sharing-sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.metmoi.sample.location-base-sharing-sample";

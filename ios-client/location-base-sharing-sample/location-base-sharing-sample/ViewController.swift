@@ -12,10 +12,11 @@ import GooglePlaces
 import FirebaseDatabase
 import UserNotifications
 
-class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate, UISearchBarDelegate, GMSAutocompleteFetcherDelegate, SearchResultsControllerDelegate{
+class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate, UISearchBarDelegate, GMSAutocompleteFetcherDelegate, SearchResultsControllerDelegate, MessageViewControllerDelegate {
     
     var startupFlag = 0;
     var ref: FIRDatabaseReference!
+    var curMarkers = Array<GMSMarker>()
     
     var locationManager = CLLocationManager()
     var didFindMyLocation = false
@@ -39,6 +40,41 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
         
         ref.observe(.value, with: { snapshot in
             print(snapshot.value ?? "error")
+            
+            if let dict = snapshot.value {
+                self.mapView.clear()
+                
+                if let userMarker = self.userCreatedMarker {
+                    userMarker.map = self.mapView
+                }
+                
+                let messages = (dict as! NSDictionary).object(forKey: "messages") as! NSDictionary
+                
+                for key in messages.allKeys {
+                    let message = messages.object(forKey: key) as! NSDictionary
+                    
+                    let lat_location = Double.init(message.object(forKey: "lat_location") as! CFloat)
+                    let long_location = Double.init(message.object(forKey: "long_location") as! CFloat)
+                    let coord = CLLocationCoordinate2D.init(latitude: lat_location, longitude: long_location)
+                    
+                    if (self.mapView.projection.contains(coord)){
+                        
+                        ServiceClient.sharedInstance().getMessageById(key as! String, completionHandlerForGetMessageByID: { (res, err) in
+                            
+                            if let error = err {
+                                print("Error ", error )
+                            }
+                            else
+                            {
+                                DispatchQueue.main.async {
+                                    let newMarker = CTMarker.init(id: key as! String, dictionary: res as! NSDictionary)
+                                    newMarker.map = self.mapView
+                                }
+                            }
+                        })
+                    }
+                }
+            }
             
             if self.startupFlag != 0 {
                 self.userNotificationConfig()
@@ -100,7 +136,7 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
         }
     }
     
-    func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
+    func mapView(_ mapView: GMSMapView, markerInfoWindow marker: CTMarker) -> UIView? {
         let inforWindow = UIView()
         
         inforWindow.frame = CGRect(x: 0, y: 0, width: 200, height: 70)
@@ -131,14 +167,16 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
 //        self.present(alertView, animated: true, completion: nil)
         
         let messageViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MessageViewController") as! MessageViewController
-        messageViewController.position = self.userCreatedMarker.position
+        messageViewController.position = marker.position
+        messageViewController.userMarker = marker as! CTMarker
+        messageViewController.delegate = self
         self.navigationController?.pushViewController(messageViewController, animated: true)
-        
     }
     
     func didTapMyLocationButton(for mapView: GMSMapView) -> Bool {
         let location = mapView.myLocation
         let camera = GMSCameraPosition.camera(withLatitude: (location?.coordinate.latitude)!, longitude: (location?.coordinate.longitude)!, zoom: 15)
+        mapView.myLocation 
         mapView.animate(to: camera)
         return true
     }
@@ -166,6 +204,10 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
         drawMarker()
     }
     
+    func markerSent(marker: GMSMarker) {
+        marker.map = nil
+    }
+    
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if !didFindMyLocation {
             
@@ -187,7 +229,6 @@ class ViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDel
         let searchController = UISearchController.init(searchResultsController: searchResultsController)
         searchController.searchBar.delegate = self
         self.present(searchController, animated: true, completion: nil)
-        
     }
 
     
