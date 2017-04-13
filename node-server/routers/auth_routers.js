@@ -17,6 +17,8 @@ router.get('/profile', auth, ctrlProfile.profileRead);
 router.post('/register', ctrlAuth.register);
 router.post('/login', ctrlAuth.login);
 
+router.get('/user/:id', ctrlProfile.findbyEmail);
+
 //facebookAuth
 // route for facebook authentication and login
 router.get('/facebook', passport.authenticate('facebook', { scope : 'email' }));

@@ -14,5 +14,15 @@ module.exports.profileRead = function(req, res) {
         res.status(200).json(user);
       });
   }
+};
 
+module.exports.findbyEmail = function(req, res) {
+  User.find({'email': 'admin@gmail.com'}, function(error, user){
+      if (user != null)
+      {
+        res.json = ({
+          id: user._id
+        })
+      }
+    });
 };

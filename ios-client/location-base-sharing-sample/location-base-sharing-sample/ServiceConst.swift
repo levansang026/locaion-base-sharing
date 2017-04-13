@@ -15,8 +15,8 @@ extension ServiceClient{
     }
     
     struct Method{
-        static let AllMessages = "/messages/"
-        static let MessagesByID = "/messages/{id}"
+        static let AllMessages = "/api/messages/"
+        static let MessagesByID = "/api/messages/{id}"
     }
     
     struct JSONResponseKeys{

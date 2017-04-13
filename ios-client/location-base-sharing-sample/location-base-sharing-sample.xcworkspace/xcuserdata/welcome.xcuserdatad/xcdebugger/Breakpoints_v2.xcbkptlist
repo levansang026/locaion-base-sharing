@@ -47,7 +47,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
             endingLineNumber = "59"
-            landmarkName = "getMessageById(_:completionHandlerForGetMessageByID:)"
+            landmarkName = "taskForGetMethod(_:parameters:_:completionHandlerForGet:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,8 +73,8 @@
                   symbolName = "location_base_sharing_sample.ServiceClient.taskForGetMethod (Swift.String, parameters : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, completionHandlerForGet : (Swift.Optional&lt;Swift.AnyObject&gt;, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; __ObjC.URLSessionDataTask"
                   moduleName = "location-base-sharing-sample"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///bill/wolf/graduation/new-stage/sample-project/location-base-sharing-sample/location-base-sharing-sample/ServiceClient.swift"
-                  timestampString = "513674670.525249"
+                  urlString = "file:///bill/wolf/graduation/new-stage/lbs/ios-client/location-base-sharing-sample/location-base-sharing-sample/ServiceClient.swift"
+                  timestampString = "513738290.049764"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "33"
@@ -88,8 +88,8 @@
                   symbolName = "location_base_sharing_sample.ServiceClient.(taskForGetMethod (Swift.String, parameters : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, completionHandlerForGet : (Swift.Optional&lt;Swift.AnyObject&gt;, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; __ObjC.URLSessionDataTask).(closure #1)"
                   moduleName = "location-base-sharing-sample"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///bill/wolf/graduation/new-stage/sample-project/location-base-sharing-sample/location-base-sharing-sample/ServiceClient.swift"
-                  timestampString = "513674670.52823"
+                  urlString = "file:///bill/wolf/graduation/new-stage/lbs/ios-client/location-base-sharing-sample/location-base-sharing-sample/ServiceClient.swift"
+                  timestampString = "513738290.051653"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "34"
@@ -111,8 +111,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
             endingLineNumber = "62"
-            landmarkName = "getMessageById(_:completionHandlerForGetMessageByID:)"
+            landmarkName = "taskForGetMethod(_:parameters:_:completionHandlerForGet:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "location_base_sharing_sample.ServiceClient.taskForGetMethod (Swift.String, parameters : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, Swift.String, completionHandlerForGet : (Swift.Optional&lt;Swift.AnyObject&gt;, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; __ObjC.URLSessionDataTask"
+                  moduleName = "location-base-sharing-sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///bill/wolf/graduation/new-stage/lbs/ios-client/location-base-sharing-sample/location-base-sharing-sample/ServiceClient.swift"
+                  timestampString = "513738290.056224"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "630">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "location_base_sharing_sample.ServiceClient.(taskForGetMethod (Swift.String, parameters : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, Swift.String, completionHandlerForGet : (Swift.Optional&lt;Swift.AnyObject&gt;, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; __ObjC.URLSessionDataTask).(closure #1)"
+                  moduleName = "location-base-sharing-sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///bill/wolf/graduation/new-stage/lbs/ios-client/location-base-sharing-sample/location-base-sharing-sample/ServiceClient.swift"
+                  timestampString = "513738290.058166"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "35">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -127,8 +159,40 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "117"
             endingLineNumber = "117"
-            landmarkName = "sendNewMessage(_:_:)"
+            landmarkName = "taskForPostMethod(_:parameters:jsonBody:completionHandlerForPost:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "location_base_sharing_sample.ServiceClient.taskForPostMethod (Swift.String, parameters : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, jsonBody : Swift.String, completionHandlerForPost : (Swift.Optional&lt;Swift.AnyObject&gt;, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; __ObjC.URLSessionDataTask"
+                  moduleName = "location-base-sharing-sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///bill/wolf/graduation/new-stage/lbs/ios-client/location-base-sharing-sample/location-base-sharing-sample/ServiceClient.swift"
+                  timestampString = "513738290.061665"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "1053">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "location_base_sharing_sample.ServiceClient.(taskForPostMethod (Swift.String, parameters : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, jsonBody : Swift.String, completionHandlerForPost : (Swift.Optional&lt;Swift.AnyObject&gt;, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; __ObjC.URLSessionDataTask).(closure #1)"
+                  moduleName = "location-base-sharing-sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///bill/wolf/graduation/new-stage/lbs/ios-client/location-base-sharing-sample/location-base-sharing-sample/ServiceClient.swift"
+                  timestampString = "513738290.063604"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "35">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -159,40 +223,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "88"
             endingLineNumber = "88"
-            landmarkName = "taskForPostMethod(_:parameters:jsonBody:completionHandlerForPost:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "location_base_sharing_sample.ServiceClient.(taskForPostMethod in _005E0570ED75714E7DF66C7CD678EA5E) (Swift.String, parameters : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, jsonBody : Swift.String, completionHandlerForPost : (Swift.Optional&lt;Swift.AnyObject&gt;, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; __ObjC.URLSessionDataTask"
-                  moduleName = "location-base-sharing-sample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///bill/wolf/graduation/new-stage/sample-project/location-base-sharing-sample/location-base-sharing-sample/ServiceClient.swift"
-                  timestampString = "513674670.545329"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "88"
-                  endingLineNumber = "88"
-                  offsetFromSymbolStart = "1053">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "location_base_sharing_sample.ServiceClient.((taskForPostMethod in _005E0570ED75714E7DF66C7CD678EA5E) (Swift.String, parameters : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, jsonBody : Swift.String, completionHandlerForPost : (Swift.Optional&lt;Swift.AnyObject&gt;, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; __ObjC.URLSessionDataTask).(closure #1)"
-                  moduleName = "location-base-sharing-sample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///bill/wolf/graduation/new-stage/sample-project/location-base-sharing-sample/location-base-sharing-sample/ServiceClient.swift"
-                  timestampString = "513674670.547146"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "90"
-                  endingLineNumber = "90"
-                  offsetFromSymbolStart = "35">
-               </Location>
-            </Locations>
+            landmarkName = "ServiceClient"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -208,6 +240,38 @@
             startingLineNumber = "43"
             endingLineNumber = "43"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "location-base-sharing-sample/ServiceClient.swift"
+            timestampString = "513738360.686487"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "taskForPostMethod(_:parameters:jsonBody:completionHandlerForPost:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "location-base-sharing-sample/ServiceClient.swift"
+            timestampString = "513738381.80125"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "taskForPostMethod(_:parameters:jsonBody:completionHandlerForPost:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

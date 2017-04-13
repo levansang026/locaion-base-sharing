@@ -40,6 +40,7 @@ class ServiceClient : NSObject{
                 print("Your request returned a status code others than 2xx")
                 return
             }
+            print (statusCode)
             
             guard let data = data else{
                 print("No data found with your request")
@@ -85,7 +86,7 @@ class ServiceClient : NSObject{
 
     
     
-    func getMessageById(_ messageID: Int, completionHandlerForGetMessageByID: @escaping (_ result: AnyObject?, _ error: NSError?) -> Void) {
+    func getMessageById(_ messageID: String, completionHandlerForGetMessageByID: @escaping (_ result: AnyObject?, _ error: NSError?) -> Void) {
         
         let method = substituteKeyInMethod(ServiceClient.Method.MessagesByID, key: "id", value: String(messageID))
         
@@ -148,7 +149,7 @@ class ServiceClient : NSObject{
         let jsonBody = "{\"title\": \"\(message.title)\",\"content\": \"\(message.content)\", \"lat_location\": \(message.position.latitude), \"long_location\": \(message.position.longitude), \"sender\": \"\(message.sender)\"}"
         
         //Make the request
-        let _ = taskForPostMethod("/messages", parameters: [:], jsonBody: jsonBody) { (result, error) in
+        let _ = taskForPostMethod("/api/messages", parameters: [:], jsonBody: jsonBody) { (result, error) in
             if let error = error{
                 completionHandlerForAddNewMessage(nil, error)
             } else {
